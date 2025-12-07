@@ -54,36 +54,36 @@ st.subheader("A部分：受访人的个人信息，请选择最合适的答案�
 
 q1 = st.radio("*1. What is your age group? 您属于以下哪个年龄段?", 
               ["18–24 years / 18–24岁", "25–34 years / 25–34岁", "35–44 years / 35–44岁", 
-               "45–54 years / 45–54岁", "55 years and above /55岁及以上"])
+               "45–54 years / 45–54岁", "55 years and above /55岁及以上"], index=None)
 
 q2 = st.radio("*2. What is your gender?您的性别是?", 
-              ["Male / 男性", "Female / 女性"])
+              ["Male / 男性", "Female / 女性"], index=None)
 
 q3 = st.radio("*3. What is your highest level of education you have completed?您已完成的最高学历是?",
               ["High school or below / 高中及以下", "Associate degree / 大专", "Bachelor's degree / 本科",
-               "Master's degree / 硕士", "Doctorate / 博士"])
+               "Master's degree / 硕士", "Doctorate / 博士"], index=None)
 
 q4 = st.radio("*4.In which city of Guangdong Province do you currently reside?您目前常住的广东省城市是?",
               ["Guangzhou / 广州", "Shenzhen / 深圳", "Zhuhai / 珠海", "Shantou / 汕头",
                "Foshan / 佛山", "Shaoguan / 韶关", "Zhanjiang / 湛江", "Jiangmen / 江门",
                "Maoming / 茂名", "Huizhou / 惠州", "Meizhou / 梅州", "Shanwei / 汕尾",
                "Heyuan / 河源", "Yangjiang / 阳江", "Qingyuan / 清远", "Dongguan / 东莞",
-               "Zhongshan / 中山", "Chaozhou / 潮州", "Jieyang / 揭阳", "Yunfu / 云浮"])
+               "Zhongshan / 中山", "Chaozhou / 潮州", "Jieyang / 揭阳", "Yunfu / 云浮"], index=None)
 
 q5 = st.radio("*5. What is your current employment status? 您目前的职业状况是?",
               ["Government or public institutions / 政府或事业单位", "Employees of the enterprise / 企业员工",
                "Self-employed / 个体经营者", "Freelancing / 自由职业", "Student / 学生",
-               "Retired / 退休", "Unemployed / 无业", "Other / 其他"])
+               "Retired / 退休", "Unemployed / 无业", "Other / 其他"], index=None)
 
 q6 = st.radio("*6. What is your average monthly income?您税前的平均月收入是多少?",
               ["No income / 无收入", "RMB 5,000 or below / 5,000元以下",
                "RMB 5,001–8,000 / 5,001–8,000元", "RMB 8,001–12,000 / 8,001–12,000元",
                "RMB 12,001–20,000 / 12,001–20,000元", "RMB 20,001–30,000 / 20,001–30,000元",
                "RMB 30,001–50,000 / 30,001–50,000元", "RMB 50,001–80,000 / 50,001–80,000元",
-               "RMB 80,001 and above / 80,001元以上"])
+               "RMB 80,001 and above / 80,001元以上"], index=None)
 
 q7 = st.radio("*7. Approximately how often do you engage in domestic travel for leisure per year? 您每年大约进行多少次国内休闲旅游?",
-              ["1–3 times / 每年1–3次", "4–6 times / 每年4–6次", "7–9 times / 每年7–9次", "10 times or more / 每年10次及以上"])
+              ["1–3 times / 每年1–3次", "4–6 times / 每年4–6次", "7–9 times / 每年7–9次", "10 times or more / 每年10次及以上"], index=None)
 
 st.markdown("*8. In which of the following situations do you typically use Virtual Cultural and Heritage Tourism Tour Apps (VCHTA)? 您通常在哪些情境中使用虚拟文化遗产旅游应用程序? 【多选题】")
 q8_1 = st.checkbox("To plan a future cultural or heritage trip / 用于规划未来的文化或遗产旅游", key="q8_1")
@@ -117,19 +117,19 @@ st.markdown("""
 """)
 
 vq1 = st.radio("*The images presented in the VCHTA are clear and visually detailed. VCHTA中呈现的图像清晰、细节丰富。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq1")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq1", index=None)
 
 vq2 = st.radio("*The color and lighting in the virtual scenes are realistic and appealing. 虚拟场景中的色彩和光影效果真实且有吸引力。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq2")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq2", index=None)
 
 vq3 = st.radio("*The cultural elements in the scenes are visually rich and immersive. 场景中的文化元素视觉表现丰富，具有沉浸感。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq3")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq3", index=None)
 
 vq4 = st.radio("*The layout and visual style of the VCHTA are consistent and pleasant. VCHTA的布局和视觉风格一致且令人愉悦。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq4")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq4", index=None)
 
 vq5 = st.radio("*The overall design of the VCHTA enhances my viewing experience. VCHTA的整体设计提升了我的观看体验。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq5")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="vq5", index=None)
 
 st.subheader("Sub-variable 2 - Interactivity (IT)")
 st.markdown("""
@@ -140,19 +140,19 @@ st.markdown("""
 """)
 
 it1 = st.radio("*The VCHTA responds promptly when I interact with it. 当我与VCHTA互动时，系统响应迅速。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it1")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it1", index=None)
 
 it2 = st.radio("*I can freely switch viewing perspectives in the virtual environment (for example, top view, eye-level, or close-up). 我可以在虚拟环境中自由切换观察视角（如俯视、平视或细节特写）。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it2")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it2", index=None)
 
 it3 = st.radio("*The system provides relevant feedback when I take actions. 当我进行操作时，系统会提供相关反馈。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it3")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it3", index=None)
 
 it4 = st.radio("*The interaction feels intuitive and easy to manage. 互动过程感觉直观、易于操作。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it4")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it4", index=None)
 
 it5 = st.radio("*The interactive design gives me a sense of control over the exploration process. 交互设计让我感受到对探索过程的控制力。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it5")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="it5", index=None)
 
 st.subheader("Sub-variable 3 - Content Personalization (CP)")
 st.markdown("""
@@ -163,19 +163,19 @@ st.markdown("""
 """)
 
 cp1 = st.radio("*The content recommended by the VCHTA matches my interests. VCHTA推荐的内容符合我的兴趣。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp1")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp1", index=None)
 
 cp2 = st.radio("*I can personalize how content is shown based on my preferences. 我可以根据个人偏好调整内容的呈现方式。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp2")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp2", index=None)
 
 cp3 = st.radio("*The suggestions provided by the VCHTA meet my expectations. VCHTA提供的推荐内容符合我的预期。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp3")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp3", index=None)
 
 cp4 = st.radio("*I can adjust settings easily to influence what content is shown. 我可以通过调整设置，灵活控制内容的呈现。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp4")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp4", index=None)
 
 cp5 = st.radio("*The VCHTA feels tailored to my cultural interests. VCHTA的内容感觉贴合我的文化兴趣。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp5")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="cp5", index=None)
 
 st.header("Variable 2 - Perceived Ease of Use (PEOU)")
 st.markdown("""
@@ -186,22 +186,22 @@ st.markdown("""
 """)
 
 peou1 = st.radio("*I find it easy to get information using the VCHTA. 我觉得通过VCHTA获取信息很容易。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou1")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou1", index=None)
 
 peou2 = st.radio("*Tasks in the VCHTA are simple to perform. 在VCHTA中完成各项任务很简单。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou2")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou2", index=None)
 
 peou3 = st.radio("*The layout and features are straightforward. VCHTA的布局和功能设计清晰明了。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou3")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou3", index=None)
 
 peou4 = st.radio("*After a brief guide, I can operate the main functions of VCHTA independently. 通过简短指引后，我能独立操作主要功能。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou4")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou4", index=None)
 
 peou5 = st.radio("*I can quickly understand how to explore the virtual environment when I first use VCHTA. 初次使用时，我能快速理解如何探索虚拟场景。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou5")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou5", index=None)
 
 peou6 = st.radio("*Overall, the VCHTA is user-friendly. 整体来看，VCHTA是一个易于使用的平台。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou6")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="peou6", index=None)
 
 st.header("Variable 3 - Perceived Usefulness (PU)")
 st.markdown("""
@@ -212,19 +212,19 @@ st.markdown("""
 """)
 
 pu1 = st.radio("*The VCHTA helps me learn about cultural heritage sites. VCHTA有助于我了解文化遗产景点。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu1")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu1", index=None)
 
 pu2 = st.radio("*The information in the VCHTA is useful for trip planning. VCHTA中的信息对我规划行程很有帮助。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu2")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu2", index=None)
 
 pu3 = st.radio("*I gain meaningful cultural knowledge using the VCHTA. 通过VCHTA，我获得了有价值的文化知识。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu3")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu3", index=None)
 
 pu4 = st.radio("*The app makes me more confident about visiting these sites. VCHTA让我对参观这些景点更有信心。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu4")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu4", index=None)
 
 pu5 = st.radio("*I benefit from using the VCHTA to explore cultural destinations. 使用VCHTA探索文化目的地让我受益良多。",
-               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu5")
+               ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="pu5", index=None)
 
 st.header("Variable 4 - Confirmation (CONF)")
 st.markdown("""
@@ -235,19 +235,19 @@ st.markdown("""
 """)
 
 conf1 = st.radio("*My experience using the VCHTA met my expectations. 我使用VCHTA的体验达到了我的预期。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf1")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf1", index=None)
 
 conf2 = st.radio("*Compared to my expectations, the cultural details presented by VCHTA were richer/more engaging. 相比预期，VCHTA呈现的文化细节更丰富/更具感染力。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf2")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf2", index=None)
 
 conf3 = st.radio("*I experienced more value from the VCHTA than I had originally anticipated. 我从VCHTA中获得的价值超出了最初的预期。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf3")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf3", index=None)
 
 conf4 = st.radio("*The performance of the VCHTA aligned closely with what I had envisioned. VCHTA的表现与我原本设想的非常接近。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf4")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf4", index=None)
 
 conf5 = st.radio("*Overall, the VCHTA delivered an experience consistent with my expectations. 总体而言，VCHTA所提供的体验与我的预期是一致的。",
-                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf5")
+                 ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="conf5", index=None)
 
 st.header("Variable 5 - Satisfaction (SAT)")
 st.markdown("""
@@ -258,19 +258,19 @@ st.markdown("""
 """)
 
 sat1 = st.radio("*I am satisfied with my experience using the VCHTA. 我对使用VCHTA的整体体验感到满意。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat1")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat1", index=None)
 
 sat2 = st.radio("*I found the VCHTA experience enjoyable and worthwhile. 我觉得VCHTA的体验愉快且有价值。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat2")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat2", index=None)
 
 sat3 = st.radio("*The app successfully met my expectations for functionality and information. VCHTA在功能性和信息内容方面很好地满足了我的预期。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat3")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat3", index=None)
 
 sat4 = st.radio("*I would use the VCHTA again for similar cultural exploration needs. 若有类似的文化探索需求，我还会再次使用VCHTA。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat4")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat4", index=None)
 
 sat5 = st.radio("*The VCHTA provided a satisfying and enriching digital tourism experience. VCHTA为我提供了一次令人满意且充实的数字旅游体验。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat5")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="sat5", index=None)
 
 st.header("Variable 6 - Intention to Visit (ITV)")
 st.markdown("""
@@ -281,19 +281,19 @@ st.markdown("""
 """)
 
 itv1 = st.radio("*I plan to visit the sites I explored using the VCHTA. 我计划前往VCHTA中探索过的景点参观。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv1")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv1", index=None)
 
 itv2 = st.radio("*I will consider visiting heritage sites I saw in the app. 我会考虑参观在应用中看到的文化遗产地。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv2")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv2", index=None)
 
 itv3 = st.radio("*I intend to spend time and resources visiting those sites. 我有意愿投入时间和资源去实地参观这些景点。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv3")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv3", index=None)
 
 itv4 = st.radio("*I would suggest these places to others for visiting. 我愿意向他人推荐这些参观地点。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv4")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv4", index=None)
 
 itv5 = st.radio("*The VCHTA increased my interest in real cultural visits. VCHTA增强了我对真实文化参观的兴趣。",
-                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv5")
+                ["Strongly Disagree 非常不同意", "Disagree 不同意", "Neutral 中立", "Agree 同意", "Strongly Agree 非常同意"], key="itv5", index=None)
 
 st.markdown("---")
 
