@@ -181,8 +181,8 @@ st.header("Variable 2 - Perceived Ease of Use (PEOU)")
 st.markdown("""
 **Operational Definition :**The degree to which a user believes that using the VCHTA would be free of effort.
 
-变量2 - 感知易用性  
-操作定义:由于VR技术的使用（VRTU），学生在电视节目后期制作中的学习成绩和技能发展有了显著提高。
+变量2 - 感知易用性
+操作定义：用户认为使用 VCHTA 会轻松无障碍的程度。
 """)
 
 peou1 = st.radio("*I find it easy to get information using the VCHTA. 我觉得通过VCHTA获取信息很容易。",
